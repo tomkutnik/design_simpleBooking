@@ -1,0 +1,40 @@
+.hero{
+    width: 23.45rem;
+    height: 58.5rem;
+    background: $appBackground;
+    overflow:hidden;
+
+    @media screen and (min-width: 1440px) {
+          width: 90rem;
+    }
+
+    &__leftBackground{
+        position: relative;
+       left: -20.2rem;
+        top: -30rem;
+        width: 32rem;
+        height: 61.8rem;
+        background: $gradientTR;
+        border-radius: 0 0 16rem 16rem;
+
+        @media screen and (min-width: 1440px) {
+            left: -5.8rem;
+            top: -18rem;
+        }
+    }
+
+    &__rightBackground{
+        position: relative;
+        left: 11.7rem;
+        top: -35rem;
+        width: 32rem;
+        height: 61.8rem;
+        background: $appNdBackground;
+        border-radius: 16rem 16rem 0 0;
+
+        @media screen and (min-width: 1440px) {
+            left: 69.6rem;
+            top: -54.5rem;
+        }
+    }
+}

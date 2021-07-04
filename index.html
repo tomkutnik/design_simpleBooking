@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link href="./scss/style.css" rel="stylesheet">
+  <link href="./scss/overlay.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <main class="hero">
+    <div class="hero__leftBackground"></div>
+    <div class="hero__rightBackground"></div>
+    <section class="phone">
+      <header class="phone__header">
+        <div class="phone__headerSpeaker"></div>
+        <div class="phone__headerArrow">〈</div>
+        <img class="phone__headerPic" src="./src/avatar.jpg">
+        <div class="phone__headerInfo">
+          <h1 class="phone__headerName"> Samuel Green</h1>
+          <p class="phone__headerStatus">Available to Walk</p>
+        </div>
+        <div class="phone__headerMenu">︙</div>
+      </header>
+      <div class="phone__body">
+        <div class="phone__bodyMsg-left">
+          That sounds great. I’d be happy with that.
+        </div>
+        <div class="phone__bodyMsg-left">
+          Could you send over some pictures of your dog, please?
+        </div>
+        <div class="phone__bodyMsg-pic">
+          <img src="./src/dog-image-1.jpg">
+          <img src="./src/dog-image-2.jpg">
+          <img src="./src/dog-image-3.jpg">
+        </div>
+        <div class="phone__bodyMsg-right">
+          Here are a few pictures. She’s a happy girl!
+        </div>
+        <div class="phone__bodyMsg-right phone__bodyMsg-right-small ">
+          Can you make it?
+        </div>
+        <div class="phone__bodyMsg-left">
+          She looks so happy! The time we discussed works. How long shall I take her out for?
+        </div>
+
+        <lable class="phone__bodyOffer">
+          <input type="radio">30 minute walk
+          <h3>$29</h3><span class="phone__bodyOfferCheckmark"></span>
+        </lable>
+        <lable class="phone__bodyOffer">
+          <input type="radio">
+            1 hour walk
+          <h3>
+            $49</h3><span class="phone__bodyOfferCheckmark"></span>
+          </lable>
+        <lable class="phone__msg">
+          <input class="phone__msgBox" type="text" placeholder="  Type a message…"><button class="phone__msgBtn">›</button>
+        </lable>
+      </div>
+    </section>
+    <section class="info">
+      <header class="info__header">
+        Simple booking
+      </header>
+      <p class="info__text">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </section>
+
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tomasz Kutnik</a>.
+  </div>
+
+  <div>
+    <div id="mobile" class="showcase showcase-mobile">
+      <img src="./src/mobile-design.jpg">
+    </div>
+    <div id="desktop" class="showcase showcase-desktop">
+      <img src="./src/desktop-design.jpg">
+    </div>
+    <div id="tablet" class="showcase showcase-tablet">
+      <!--<img src="./src/tablet-design.png">-->
+    </div>
+    <button class="showcase__btn showcase__menuBtn" onclick="showOverlayMenu()">≡
+    </button>
+    <div id="overlayMenu" class="showcase__menu">
+      <button class="showcase__btn" onclick="showOverlayDesign('mobile')">✆</button>
+      <!--<button class="showcase__btn" onclick="showOverlayDesign('tablet')">📱</button>-->
+      <button class="showcase__btn" onclick="showOverlayDesign('desktop')">💻</button>
+      <form>
+        <label for="vis">Visibility:</label>
+        <input type="range" id="vis" class="showcase__vis" value="2" name="vis" min="0" max="5">
+      </form> 
+    </div>
+
+
+  </div>
+  <script src="./js/script.js" type="script"></script>
+  <script src="./js/overlay.js"></script>
+</body>
+
+</html>

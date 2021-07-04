@@ -1,0 +1,24 @@
+//Colors
+///Text
+
+$subHeading: hsl(276, 100%, 81%);
+$chatOnLeft: hsl(276, 55%, 52%);
+$chatOnRight: hsl(271, 15%, 43%);
+$placeHolderText: hsl(206, 6%, 29%);
+$mainHeading: hsl(271, 36%, 24%);
+$paragraphText: hsl(270, 7%, 64%);
+
+// Gradients
+
+$gradientLR: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+$gradientRL: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+$gradientTR: linear-gradient(45deg, hsl(264, 100%, 61%) 20%, hsl(293, 100%, 63%));
+
+//Secondary
+
+$white: hsl(0, 0%, 100%);
+$appBackground: 	hsl(0,	0%,	98.04%	);
+$appNdBackground: hsl(270, 20%, 96%);
+$submitButtonBackground: hsl(271, 36%, 24%);
+$radioButtonOutline: hsl(289, 100%, 72%);
+$chatOnLeftBg: #ede5f4;
